@@ -1,8 +1,8 @@
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
-        $('<img/>')[0].src = this;
+        //$('<img/>')[0].src = this;
         // Alternatively you could use:
-        // (new Image()).src = this;
+        (new Image()).src = this;
     });
 }
 
@@ -12,13 +12,17 @@ function gif_theme(theme){
     $.getJSON(endpoint, 
         function(data) {
             gifs = data["data"];
+            var urls = []
             var body = document.getElementsByTagName('body')[0];
-            url = 'https://media.giphy.com/media/' + gifs[0]["id"]+ '/giphy.gif'
-            body.style.backgroundImage = 'url('+ url + ')';
+            for (j = 0; j < gifs.length; j++) { 
+                urls.push('https://media.giphy.com/media/' + gifs[j]["id"]+ '/giphy.gif')
+            }
+            body.style.backgroundImage = 'url('+ urls[0] + ')';
+            preload(urls)
             var counter = 1;
             var i = setInterval(function(){
                 var body = document.getElementsByTagName('body')[0];
-                url = 'https://media.giphy.com/media/' + gifs[counter]["id"]+ '/giphy.gif'
+                url = urls[counter]
                 body.style.backgroundImage = 'url('+ url + ')';
                 counter++;
                 if(counter === 10) {

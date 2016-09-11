@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>
+        Philosophizing
+    </title>
+    <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+    <script src="js/engine.js" type="text/javascript" language="javascript"></script>
+</head>
+<body style="background-image: url('http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif'); background-repeat: no-repeat; background-size: cover;">
+
+    <style type="text/css">.playerbutton{cursor:pointer;border:none;background:transparent;outline:none;display:inline}.gaf210codes_youtubebox,.preload_box{width:1px;height:1px;overflow:hidden;visibility:hidden;position:absolute;display:inline}.gaf210codes_youtubetitle{font-family:Arial;font-size:12px;display:inline-block;vertical-align:top;padding:6px;padding-bottom:0px;text-shadow:1px 1px #ccc;}#gaf210codes_u05a7_container{position:fixed;z-index:9999999;bottom:0px;left:5px;background:rgba(255,255,255,0.3);}</style>
+    <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+    <script type="text/javascript">function toggleButtonPlayer_u05a7(buttonobj){buttonobj.style.display="none";if(buttonobj.id=="gaf210codes-u05a7-playbutton"){document.getElementById("gaf210codes-u05a7-pausebutton").style.display="inline";}else{document.getElementById("gaf210codes-u05a7-playbutton").style.display="inline";}}/*Youtube player code generated @ http://gaf210.imvustylez.net*/</script>
+    <div id="gaf210codes_u05a7_container"><div class="gaf210codes_youtubebox"><iframe width="250" height="250" id="yt" src="https://www.youtube.com/embed/?list=PLblpLcnXcF8SHmNv_UMYDB5fX_1tPchlV&amp;index=0&amp;listType=playlist&amp;enablejsapi=1&amp;fs=0&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;controls=0&amp;autoplay=1&amp;loop=1" onload="gaf210codes_u05a7=new YT.Player(this,{events:{'onStateChange':function(event){if(event.data == 1){document.getElementById('gaf210codes_u05a7_title').innerHTML=event.target.getVideoData().title}}}})"></iframe></div>
+    <button type="button" class="playerbutton" id="gaf210codes-u05a7-playbutton" onclick="gaf210codes_u05a7.playVideo();toggleButtonPlayer_u05a7(this)" style="display:none"><img src="http://i62.tinypic.com/axnot0.jpg"></button><button type="button" class="playerbutton" id="gaf210codes-u05a7-pausebutton" onclick="gaf210codes_u05a7.pauseVideo();toggleButtonPlayer_u05a7(this)"><img src="http://i57.tinypic.com/2mqugw2.jpg"></button><div class="preload_box"><img src="http://i62.tinypic.com/axnot0.jpg"><img src="http://i57.tinypic.com/2mqugw2.jpg"></div><input style="outline:none" type="range" min="0" max="100" onchange="gaf210codes_u05a7.setVolume(this.value)"><div id="gaf210codes_u05a7_title" class="gaf210codes_youtubetitle"></div></div>
+    <script type="text/javascript">
+        var index = Math.floor(Math.random() * 100)
+        document.getElementById('yt').src = document.getElementById('yt').src + index
+        console.log(document.getElementById('yt').src)
+        gif_theme('pain')
+    </script>
+</body>
+
+</html>
