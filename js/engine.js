@@ -12,13 +12,11 @@ function gif_theme(theme){
     $.getJSON(endpoint, 
         function(data) {
             gifs = data["data"];
-            console.log(gifs);
             var body = document.getElementsByTagName('body')[0];
             url = 'https://media.giphy.com/media/' + gifs[0]["id"]+ '/giphy.gif'
             body.style.backgroundImage = 'url('+ url + ')';
             var counter = 1;
             var i = setInterval(function(){
-                console.log(counter)
                 var body = document.getElementsByTagName('body')[0];
                 url = 'https://media.giphy.com/media/' + gifs[counter]["id"]+ '/giphy.gif'
                 body.style.backgroundImage = 'url('+ url + ')';
