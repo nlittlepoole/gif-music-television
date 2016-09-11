@@ -8,7 +8,7 @@ function preload(arrayOfImages) {
 
 function gif_theme(theme){
     off = Math.floor(Math.random() * 4000)
-    endpoint = 'http://api.giphy.com/v1/gifs/search?q=' + theme + '&api_key=dc6zaTOxFJmzC&offset=' + off + '&limit=10'
+    endpoint = 'https://api.giphy.com/v1/gifs/search?q=' + theme + '&api_key=dc6zaTOxFJmzC&offset=' + off + '&limit=10'
     $.getJSON(endpoint, 
         function(data) {
             gifs = data["data"];
