@@ -12,17 +12,26 @@
 <body style="background-image: url('http://www.owlhatworld.com/wp-content/uploads/2015/12/38.gif'); background-repeat: no-repeat; background-size: cover;">
 
 <div class="container">
-  <h2><font color="white">Sensations</font></h2>
-  <a href="philosophizing.html" role="button" class="btn-lg btn-default">Philosophizing</a>
-  <a href="tripping.html" role="button" class="btn-lg btn-primary">Tripping</a>
-  <a href="dancing.html" role="button" class="btn-lg btn-success">Dancing</a>
-  <a href="moping.html" role="button" class="btn-lg btn-info">Moping</a>
-  <a href="falling.html" role="button" class="btn-lg btn-warning">Falling</a>
-  <a href="banging.html" role="button" class="btn-lg btn-danger">Banging</a>
+  <h2><font color="white">Select Options:</font></h2>
+<form action="player.html" method="get" role="form">
+  <div class="form-group">
+    <label for="playlist">Youtube Playlist Link</label>
+    <input type="url" class="form-control" name="playlist" id="playlist" value="https://www.youtube.com/embed/?list=PLblpLcnXcF8Rbx1v1xa9lvU1HIuc1kfwF">
+  </div>
+  <div class="form-group">
+    <label for="theme">Theme</label>
+    <input type="text" class="form-control" name="theme" id="theme" value="trippy">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="shuffle" id="shuffle"> Shuffle Playlist
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
 </div>
         <script type="text/javascript">
             gif_theme('cinemagraph+nature')
         </script>
 </body>
 </html>
-
